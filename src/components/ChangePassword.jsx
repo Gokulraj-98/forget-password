@@ -10,7 +10,7 @@ export function ChangePassword() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3000/change-password', { email, password })
+        axios.post('https://forget-password-index.onrender.com/change-password', { email, password })
             .then(result => {
                 if (result.status === 200) {
                     navigate('/login');

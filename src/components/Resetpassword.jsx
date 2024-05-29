@@ -9,7 +9,7 @@ export function ResetPassword() {
   const navigate = useNavigate()
   // const history = useHistory();
   const handleSubmit = (e) => {
-    axios.post('http://localhost:3000/reset', { email })
+    axios.post('https://forget-password-index.onrender.com/reset', { email })
       .then(result => {
         console.log(result.status);
         if (result.status === 200) {

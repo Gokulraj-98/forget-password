@@ -10,7 +10,7 @@ export function VerifyCode() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3000/verify-code', { email, code })
+        axios.post('https://forget-password-index.onrender.com/verify-code', { email, code })
             .then(result => {
                 if (result.status === 200) {
                     navigate('/change-password', { state: { email: email } });

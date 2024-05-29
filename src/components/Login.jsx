@@ -11,7 +11,7 @@ export function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3000/login', { email, password })
+    axios.post('https://forget-password-index.onrender.com/login', { email, password })
       .then(result => {
         if (result.status === 200) {
           navigate('/Home');

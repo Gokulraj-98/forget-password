@@ -10,7 +10,7 @@ export function Home() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://localhost:3000/users')
+        axios.get('https://forget-password-index.onrender.com/users')
             .then(response => setUsers(response.data))
             .catch(error => console.error('Error fetching user data:', error));
     }, []);

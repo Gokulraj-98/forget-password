@@ -9,7 +9,7 @@ export function Register() {
   const [name, setName] = useState('')
   const navigate = useNavigate()
   const handleSubmit = (e) => {
-    axios.post('http://localhost:3000/register', { name, email, password })
+    axios.post('https://forget-password-index.onrender.com/register', { name, email, password })
       .then(result => console.log(result))
     navigate('/login')
       .catch(err => console.log(err))
